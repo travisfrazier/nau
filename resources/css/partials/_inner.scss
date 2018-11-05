@@ -1,0 +1,225 @@
+// section one
+.section-one-container {
+	padding: 3rem 0;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	grid-gap: 3rem;
+	color: $font-color-secondary;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	@media only screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+	.section-one-title-container {
+		grid-column: span 2;
+		@media only screen and (max-width: 800px) {
+			grid-column: span 1;
+		}
+		.section-one-title {
+			font-size: $font-xl;
+			margin-bottom: 1.5rem;
+			font-style: italic;
+			text-align: center;
+			@media only screen and (max-width: 800px) {
+				font-size: $font-l;
+			}
+		}
+		.section-one-subtitle {
+			font-style: italic;
+			font-size: $font-l;
+			text-align: center;
+			@media only screen and (max-width: 800px) {
+				font-size: $font-m;
+			}
+		}
+	}
+	.section-one-img {
+		border-radius: 100px;
+		width: 100%;
+	}
+
+	.section-one-text {
+		font-size: $font-r;
+		line-height: $line-height-secondary;
+	}
+}
+
+// section two
+.section-two {
+	background: $color-primary;
+	padding: 3rem 0;
+	color: $font-color-primary;
+}
+
+.section-two-container {
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem;
+	justify-items: center;
+	@media only screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+	.section-two-title-container {
+		grid-column: span 5;
+		text-align: center;
+		@media only screen and (max-width: 800px) {
+			grid-column: span 1;
+		}
+		.section-two-title {
+			font-style: italic;
+			font-size: $font-xl;
+			margin-bottom: 1.5rem;
+			@media only screen and (max-width: 800px) {
+				font-size: $font-l;
+			}
+		}
+		.section-two-subtitle {
+			margin: 0 auto 1.5rem auto;
+			width: 75%;
+			line-height: $line-height-secondary;
+			@media only screen and (max-width: 800px) {
+				width: auto;
+			}
+		}
+	}
+}
+
+.section-two-item {
+	background: $white-color;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	img {
+		width: 100%;
+	}
+	.item-title {
+		color: $font-color-secondary;
+		font-size: $font-r;
+		font-weight: $font-regular;
+		margin-bottom: 1rem;
+		font-weight: $font-bold;
+		padding: 1rem;
+		line-height: $line-height-secondary;
+		margin-bottom: auto;
+	}
+}
+
+.item-link {
+	color: $font-color-secondary;
+	font-size: $font-xs;
+	padding-bottom: 0.25rem;
+	&:hover {
+		color: $font-color-secondary;
+	}
+}
+
+// Section 3
+.section-three {
+	padding: 3rem 0;
+}
+.section-three-container {
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	color: $font-color-secondary;
+	grid-gap: 3rem;
+	@media only screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+	.section-three-title {
+		grid-column: span 3;
+		font-style: italic;
+		font-size: $font-xl;
+		text-align: center;
+		@media only screen and (max-width: 800px) {
+			grid-column: span 1;
+			font-size: $font-l;
+		}
+	}
+}
+
+.box-content {
+	background-color: $color-form;
+	border-radius: 50px;
+	text-align: center;
+	width: 17rem;
+	padding: 2rem 3rem 4rem 3rem;
+	font-size: $font-m;
+	line-height: $line-height-secondary;
+	@media only screen and (max-width: 900px) {
+		width: 14rem;
+		padding: 1rem;
+	}
+	@media only screen and (max-width: 800px) {
+		width: 20rem;
+		padding: 2rem 3rem 4rem 3rem;
+	}
+}
+
+.box-title {
+	margin-bottom: 1rem;
+	font-size: $font-l;
+	text-align: center;
+	font-style: italic;
+}
+
+.section__box--container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+//Section 4
+.section-four {
+	background: $color-primary;
+	padding: 3rem 0;
+	color: $font-color-primary;
+	.section-four-container {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-gap: 1rem;
+		.section-four-title {
+			font-size: $font-xl;
+			font-style: italic;
+			text-align: center;
+			@media only screen and (max-width: 800px) {
+				font-size: $font-l;
+			}
+		}
+		img {
+			border-radius: 50%;
+			width: 100%;
+			max-width: 15%;
+		}
+		.section-four-text {
+			width: 60%;
+			text-align: center;
+		}
+	}
+}
+
+//Section 5
+.section-five {
+	background: $color-form;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	@media only screen and (max-width: 800px) {
+		background: none;
+		padding-bottom: 2rem;
+	}
+	button {
+		background: $color-form;
+		border: 4px solid $color-primary;
+		width: 30%;
+		margin: auto;
+		padding: 1rem 3rem;
+		color: $color-primary;
+		font-size: $font-r;
+		&:hover {
+			color: $font-color-primary;
+			background: $color-primary;
+		}
+		@media only screen and (max-width: 800px) {
+			width: 80%;
+			background: none;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Des Moines University</title>
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Google Fonts Go Here -->
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="header__top--content flex-container">
+                <img class="header__logo" src="./resources/images/main-logo.png">
+                <a class="header__num" href="tel:+1-515-271-1499">Call 515-271-1499</a>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav--content flex-container">
+                <ul class="header__nav--links">
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#">
+                        <li style="border-bottom: 2px solid #4b868f;">PROGRAMS</li>
+                    </a>
+                    <a href="why.html">
+                        <li>WHY DMU?</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!-- BANNER 1 -->
+        <div class="header__banner">
+            <div class="header__banner--content flex-container">
+                <p class="header__text">EARN YOUR MASTER'S DEGREE IN HEALTH CARE - ONLINE</p>
+                <!-- HTML FORM -->
+                <form class="header__form" name="signup" method="post">
+                    <legend>
+                        <h3 class="form__title">LEARN MORE TODAY!</h3>
+                    </legend>
+
+                    <input class="form__input" placeholder="First Name*" type="text" id="firstName" name="firstName">
+                    <input class="form__input" placeholder="Last Name*" type="text" id="lastName" name="lastName">
+                    <input class="form__input" placeholder="Email Address*" type="email" id="email" name="email">
+                    <input class="form__input" placeholder="Phone Number*" type="number" id="number" name="user_number">
+
+                    <select class="form__select" id="state" name="user_state">
+                        <optgroup>
+                            <option selected="selected">Select Program*</option>
+                            <option>Master of Health Care Administration</option>
+                            <option>Master of Public Health</option>
+                        </optgroup>
+                    </select>
+                    <fieldset class="form__toggle">
+                        <input type="checkbox" id="toggle" value="interest_news" name="user_interest">
+                        <span class="form__disclaimer" for="toggle">By submitting this form I accept the privacy policy
+                            and
+                            understand that Des Moines University may contact me about educational programs using an
+                            automated technology. *</span>
+                    </fieldset>
+                    <button class="form__submit" href="#" id="submit" type="submit">REQUEST INFORMATION</button>
+                    <p class="form__required">*Required fields</p>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

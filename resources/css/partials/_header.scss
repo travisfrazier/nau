@@ -1,0 +1,183 @@
+.nav-wrapper {
+	background: $color-primary;
+	.nav-container {
+		grid-template-columns: 1fr 1fr;
+		color: $font-color-primary;
+		@media only screen and (max-width: 600px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		img {
+			padding: 0.75rem 0;
+			@media only screen and (max-width: 800px) {
+				padding-right: 1rem;
+			}
+		}
+		.nav-links-container {
+			display: flex;
+			flex-direction: column;
+			justify-self: end;
+			justify-content: flex-end;
+			text-align: right;
+			@media only screen and (max-width: 600px) {
+				display: none;
+			}
+			.phone {
+				width: 8%;
+				margin-right: 0.5rem;
+				@media only screen and (max-width: 800px) {
+					width: 15%;
+				}
+			}
+			a {
+				font-family: $main-font;
+				color: $font-color-primary;
+			}
+			.tel {
+				display: inline-flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+		}
+	}
+}
+
+//Mobile nav styles
+.mobile-phone {
+	display: none;
+	@media only screen and (max-width: 600px) {
+		display: block;
+		width: 15%;
+	}
+}
+
+.mobile-menu {
+	display: none;
+	@media only screen and (max-width: 600px) {
+		display: block;
+	}
+	div {
+		width: 35px;
+		height: 5px;
+		background-color: black;
+		margin: 6px 0;
+	}
+}
+
+.nav {
+	display: flex;
+	ul {
+		display: flex;
+		margin-bottom: 0.2rem;
+		li {
+			padding: 0.6rem 0.75rem;
+			margin-left: 1rem;
+			font-weight: $font-semi-bold;
+			@media only screen and (max-width: 800px) {
+				padding: 0.5rem;
+				margin-left: 0.5rem;
+				font-size: $font-s;
+			}
+			&:hover {
+				background: $color-secondary;
+			}
+		}
+	}
+}
+
+.header-wrapper {
+	background: url('../images/background-one.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 525px;
+	color: $font-color-primary;
+	@media only screen and (max-width: 800px) {
+		background: none;
+		height: auto;
+	}
+	div {
+		grid-template-columns: auto 40%;
+		justify-content: space-between;
+		align-items: end;
+		@media only screen and (max-width: 800px) {
+			grid-template-columns: 1fr;
+		}
+		.header-text {
+			font-size: $font-xl;
+			background: $color-bkg;
+			padding: 1rem 1rem 1rem 0rem;
+			font-weight: $font-semi-bold;
+			@media only screen and (max-width: 800px) {
+				text-align: center;
+				font-size: $font-l;
+				padding: 2rem;
+			}
+		}
+		.header-text-container {
+			@media only screen and (max-width: 800px) {
+				background: url('../images/background-one.jpg');
+				background-size: cover;
+				background-position: center;
+			}
+		}
+	}
+}
+
+// Form Styles
+.contact-form {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 0 4rem;
+	justify-content: center;
+	grid-gap: 1rem;
+	background-color: $color-form;
+	height: 525px;
+	@media only screen and (max-width: 800px) {
+		width: 100%;
+		padding: 0 1rem;
+	}
+	h3 {
+		color: $font-color-form;
+		font-size: $font-m;
+		font-weight: $font-semi-bold;
+		text-align: center;
+		letter-spacing: 2px;
+		padding: 0;
+		margin-bottom: -1rem;
+		padding-top: 1.5rem;
+	}
+	input {
+		border: none;
+		padding: 0.25rem;
+	}
+	::placeholder {
+		font-size: $font-r;
+		font-weight: 300;
+	}
+	button {
+		border: none;
+		background-color: $color-primary;
+		font-size: $font-m;
+		font-weight: $font-bold;
+		color: $white-color;
+	}
+	fieldset {
+		margin-bottom: -1rem;
+	}
+	select {
+		border: none;
+		font-size: $font-r;
+	}
+	.form__disclaimer {
+		color: $grey-color;
+		font-size: $font-xs;
+		font-weight: $font-light;
+		line-height: 0.5;
+	}
+	p {
+		text-align: center;
+		font-size: $font-xs;
+	}
+}

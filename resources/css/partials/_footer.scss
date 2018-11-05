@@ -1,0 +1,32 @@
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 800px) {
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 1rem;
+	}
+	.footer-logo {
+		align-self: center;
+	}
+	.footer-acc {
+		@media only screen and (max-width: 800px) {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.footer-logo {
+		grid-column: span 2;
+		width: 100%;
+	}
+}
+
+.footer-bottom {
+	background-color: $dark-color;
+	text-align: center;
+	padding: 1rem;
+	color: $font-color-primary;
+	font-size: $font-xs;
+}

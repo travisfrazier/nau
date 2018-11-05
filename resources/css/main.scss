@@ -1,0 +1,85 @@
+// CSS Reset Import
+@import 'partials/reset';
+
+// Color Variables
+$color-primary: rgba(0, 51, 102, 1);
+$color-secondary: rgba(102, 153, 204, 1);
+$color-bkg: rgba(0, 51, 102, 0.4);
+
+$font-color-primary: #fff;
+$font-color-secondary: rgb(90, 90, 90);
+$font-color-form: rgb(241, 179, 0);
+
+$submit-color: rgba(75, 134, 143, 1);
+$color-form: rgba(211, 211, 211, 1);
+$border-color: rgba(102, 153, 204, 1);
+$white-color: #ffffff;
+$grey-color: grey;
+$main-font-color: rgb(60, 60, 64);
+$dark-color: rgba(97, 97, 97, 1);
+
+$line-height-secondary: 1.5;
+
+// Font Variables and Import
+@import url('https://use.typekit.net/plq1umw.css');
+$font-regular: 400;
+$font-semi-bold: 500;
+$font-xtra-light: 275;
+$font-light: 300;
+$font-bold: 700;
+$main-font: acumin-pro, sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$other-font: freight-sans-compressed-pro, sans-serif;
+
+$font-xl: 2.75rem;
+$font-l: 2rem;
+$font-m: 1.25rem;
+$font-r: 1rem;
+$font-s: 0.85rem;
+$font-xs: 0.75rem;
+$font-submit: 1.75rem;
+
+// Universal Styles and Classes
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	font-family: $main-font;
+	letter-spacing: 1.6px;
+	color: $main-font-color;
+	font-weight: $font-light;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+		color: $white-color;
+	}
+}
+
+.grid-container {
+	display: grid;
+	max-width: 980px;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	margin: 0 auto;
+	@media only screen and (max-width: 800px) {
+		max-width: 95%;
+	}
+}
+
+.bold {
+	font-weight: $font-bold;
+}
+
+// Partial Imports
+@import 'partials/header';
+@import 'partials/inner';
+@import 'partials/footer';
