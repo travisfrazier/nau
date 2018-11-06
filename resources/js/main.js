@@ -2,5 +2,9 @@ const mobileMenu = document.querySelector('.nav-links-container');
 const mobileButton = document.querySelector('.mobile-menu');
 
 mobileButton.addEventListener('click', () => {
-	mobileMenu.style.display = 'flex';
+	if (mobileMenu.style.display === 'none') {
+		mobileMenu.style.display = 'flex';
+	} else {
+		mobileMenu.style.display = 'none';
+	}
 });
