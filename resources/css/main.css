@@ -198,6 +198,10 @@ a:hover {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   color: #fff;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,6 +214,10 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     grid-gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -308,7 +316,7 @@ a:hover {
 
 .mobile-phone {
   display: none;
-  width: 100%;
+  width: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
