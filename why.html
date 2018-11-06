@@ -5,73 +5,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Des Moines University</title>
-    <!-- Bootstrap 4 CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <meta name="description" content="Earn your master's degree in education online with Northern Arizona University.">
+    <title>Master's Degree in Education Online | Northern Arizona University</title>
     <!-- Google Fonts Go Here -->
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./resources/css/main.css">
 </head>
 
 <body>
-    <header>
-        <div class="header__top">
-            <div class="header__top--content flex-container">
-                <img class="header__logo" src="./resources/images/main-logo.png">
-                <a class="header__num" href="tel:+1-515-271-1499">Call 515-271-1499</a>
+    <!-- MAIN HEADER -->
+    <header id="top">
+        <div class="nav-wrapper">
+            <div class="grid-container nav-container">
+                <img class="mobile-phone" src="./resources/images/phone.png" alt="Norther Arizona University Phone">
+                <img class="main-logo" src="./resources/images/main-logo.png" alt="Northern Arizona University">
+                <div class="mobile-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-links-container">
+                    <a class="tel" href="tel:+1-515-271-1499"><img class="phone" src="./resources/images/phone.png" alt="Northern Arizona University Phone">866-590-6071</a>
+                    <nav class="nav">
+                        <ul>
+                            <a href="index.html">
+                                <li class="home__page">HOME</li>
+                            </a>
+                            <a href="programs.html">
+                                <li>PROGRAMS</li>
+                            </a>
+                            <a href="#">
+                                <li style="background: rgba(102, 153, 204, 1);">WHY DMU?</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <nav class="header__nav">
-            <div class="header__nav--content flex-container">
-                <ul class="header__nav--links">
-                    <a href="index.html">
-                        <li>HOME</li>
-                    </a>
-                    <a href="programs.html">
-                        <li>PROGRAMS</li>
-                    </a>
-                    <a href="#">
-                        <li style="border-bottom: 2px solid #4b868f;">WHY DMU?</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
         <!-- BANNER 1 -->
-        <div class="header__banner">
-            <div class="header__banner--content flex-container">
-                <p class="header__text">EARN YOUR MASTER'S DEGREE IN HEALTH CARE - ONLINE</p>
+        <div id="header-wrapper-why" class="header-wrapper">
+            <div class="grid-container">
+                <div class="header-text-container">
+                    <h1 class="header-text">Why choose NAU online?</h1>
+                </div>
                 <!-- HTML FORM -->
-                <form class="header__form" name="signup" method="post">
-                    <legend>
-                        <h3 class="form__title">LEARN MORE TODAY!</h3>
-                    </legend>
+                <form class="contact-form" name="signup" method="post">
+                    <h3>Learn more today!</h3>
 
-                    <input class="form__input" placeholder="First Name*" type="text" id="firstName" name="firstName">
-                    <input class="form__input" placeholder="Last Name*" type="text" id="lastName" name="lastName">
-                    <input class="form__input" placeholder="Email Address*" type="email" id="email" name="email">
-                    <input class="form__input" placeholder="Phone Number*" type="number" id="number" name="user_number">
+                    <input placeholder="First Name*" type="text" id="firstName" name="firstName">
+                    <input placeholder="Last Name*" type="text" id="lastName" name="lastName">
+                    <input placeholder="Email Address*" type="email" id="email" name="email">
+                    <input placeholder="Phone Number*" type="number" id="number" name="user_number">
 
-                    <select class="form__select" id="state" name="user_state">
+                    <select id="state" name="user_state">
+                        <optgroup>
+                            <option selected="selected">Select State*</option>
+                            <option>Master of Health Care Administration</option>
+                            <option>Master of Public Health</option>
+                        </optgroup>
+                    </select>
+                    <select id="state" name="user_state">
                         <optgroup>
                             <option selected="selected">Select Program*</option>
                             <option>Master of Health Care Administration</option>
                             <option>Master of Public Health</option>
                         </optgroup>
                     </select>
-                    <fieldset class="form__toggle">
+                    <fieldset>
                         <input type="checkbox" id="toggle" value="interest_news" name="user_interest">
                         <span class="form__disclaimer" for="toggle">By submitting this form I accept the privacy policy
                             and
                             understand that Des Moines University may contact me about educational programs using an
                             automated technology. *</span>
                     </fieldset>
-                    <button class="form__submit" href="#" id="submit" type="submit">REQUEST INFORMATION</button>
-                    <p class="form__required">*Required fields</p>
+                    <button href="#" id="submit" type="submit">REQUEST INFORMATION</button>
+                    <p>*Required fields</p>
                 </form>
             </div>
         </div>
     </header>
+
+    <!-- Section 1 -->
+    <section id="section-one-why" class="section-one">
+        <div id="section-one-container-why" class="section-one-container grid-container">
+            <div class="section-one-title-container-why">
+                <h2 class="section-one-title">Quality and affordable education </h2>
+            </div>
+            <p class="section-one-text"> Invest in yourself – the high-quality online education you receive through NAU
+                can quickly pay for itself. With the lowest-priced tuition and highest accreditation in Arizona, an NAU
+                education degree is one of the best values in finding an affordable path to advance your career. </p>
+            <p class="section-one-text">There are several types of financial aid available to you:</p>
+            <ul>
+                <li>30 units</li>
+                <li>10 classes</li>
+                <li>100% online</li>
+            </ul>
+            <p class="section-one-text"> If you need help navigating the funding options available, contact us using
+                the phone number or the form above and we will be happy to answer any of your questions.</p>
+        </div>
+    </section>
+
+    <!-- Section 1 Reverse -->
+    <section class="section-one-rev">
+        <div class="section-one-container-rev grid-container">
+            <img class="section-one-img default-images" src="./resources/images/grads.png" alt="northern arizona university student">
+            <div class="section-one-title-container">
+                <h2 class="why-titles">Accreditation</h2>
+                <p class="section-one-text">NAU is accredited by The Higher Learning Commission (HLC) of the Northern
+                    Central Association (NCA) of Colleges and Schools, one of six regional associations recognized by
+                    the Department of Education that accredits institutions of higher education. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1 No-Reverse -->
+    <section class="section-one-no-rev">
+        <div class="section-one-container-rev grid-container">
+            <div class="section-one-title-container">
+                <h2 class="why-titles">Learning from where you are</h2>
+                <p class="section-one-text">No matter where you work or live, NAU makes your education a reality with
+                    flexible online degrees that you can earn at home. You can complete each course in as few as eight
+                    weeks, so you’ll be ready to put your degree to work sooner. </p>
+            </div>
+            <img class="section-one-img default-images" src="./resources/images/guy.png" alt="northern arizona university student">
+        </div>
+    </section>
+
+    <!-- Section 1 Reverse -->
+    <section class="section-one-rev">
+        <div class="section-one-container-rev grid-container">
+            <img class="section-one-img default-images" src="./resources/images/girls.png" alt="northern arizona university student">
+            <div class="section-one-title-container">
+                <h2 class="why-titles">Expert faculty with practical experience</h2>
+                <p class="section-one-text">Our Master of Education programs are taught by expert faculty with years of
+                    experience. Our professors are passionate about your success both in and outside the classroom.
+                    They’ll challenge you professionally and personally to give you the skills and critical thinking
+                    that it takes to make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section-five wrapper">
+        <div class="grid-container section-five-container">
+            <a href="#top"><button class="button-top bold">BACK TO TOP</button></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-top grid-container">
+            <img class="footer-logo" src="./resources/images/nau.png">
+            <div class="footer-acc">
+                <img src="./resources/images/ncate.jpg">
+                <img src="./resources/images/caep.png">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2018 Northern Arizona University. All rights reserved | Privacy Policy</p>
+        </div>
+    </footer>
 </body>
 
 </html>

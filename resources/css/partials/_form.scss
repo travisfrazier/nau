@@ -1,0 +1,64 @@
+// Form Styles
+.contact-form {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 0 2rem;
+	justify-content: center;
+	grid-gap: 1rem;
+	background-color: $color-form;
+	height: 525px;
+	@media only screen and (max-width: 800px) {
+		width: 100%;
+		padding: 0 1rem;
+	}
+	h3 {
+		color: $font-color-form;
+		font-size: $font-ml;
+		font-weight: $font-semi-bold;
+		text-align: center;
+		letter-spacing: 2px;
+		padding: 0;
+		margin-bottom: -1rem;
+		padding-top: 1.5rem;
+	}
+	input {
+		border: none;
+		padding: 0.25rem;
+		font-size: $font-s;
+	}
+	::placeholder {
+		font-size: $font-r;
+		font-weight: 300;
+	}
+	button {
+		border: none;
+		background-color: $color-primary;
+		font-size: $font-m;
+		font-weight: $font-bold;
+		color: $white-color;
+	}
+	fieldset {
+		margin-bottom: -1rem;
+		display: flex;
+		justify-content: center;
+		input {
+			align-self: flex-start;
+		}
+	}
+	select {
+		border: none;
+		font-size: $font-r;
+	}
+	.form__disclaimer {
+		color: $grey-color;
+		font-size: $font-xs;
+		font-weight: $font-light;
+	}
+	p {
+		text-align: center;
+		font-size: $font-xs;
+	}
+	#number {
+		width: 100%;
+	}
+}

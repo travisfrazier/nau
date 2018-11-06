@@ -41,7 +41,101 @@
 
 	.section-one-text {
 		font-size: $font-r;
-		line-height: $line-height-secondary;
+	}
+}
+
+//Section One Reverse - Programs Page
+.section-one-rev {
+	background: none;
+}
+.section-one-container-rev {
+	padding: 4rem 0;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3rem;
+	color: $font-color-secondary;
+	@media only screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+	img {
+		@media only screen and (max-width: 800px) {
+			grid-row: 2;
+		}
+	}
+	.section-one-rev-title {
+		font-size: $font-m;
+		font-weight: $font-bold;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		margin: 1.5rem 0;
+		font-weight: $font-semi-bold;
+		font-size: $font-r;
+	}
+	ul {
+		margin-top: 1.5rem;
+		li {
+			margin-bottom: 0.5rem;
+			font-weight: $font-semi-bold;
+		}
+		li::before {
+			content: '• ';
+			color: red;
+		}
+	}
+}
+// Section One No-Rev
+.section-one-no-rev {
+	background: $color-bkg-two;
+}
+
+// Section One Container Why
+#section-one-why {
+	background: $color-bkg-two;
+}
+#section-one-container-why {
+	grid-template-columns: 1fr;
+	justify-items: start;
+	grid-gap: 1rem;
+	.section-one-title-container-why {
+		justify-self: center;
+		margin-bottom: 1rem;
+		.section-one-title {
+			font-size: $font-xl;
+			justify-self: center;
+			font-style: italic;
+			@media only screen and (max-width: 800px) {
+				font-size: $font-l;
+			}
+		}
+		.section-one-subtitle {
+			font-style: italic;
+			font-size: $font-l;
+			//text-align: center;
+			@media only screen and (max-width: 800px) {
+				font-size: $font-m;
+			}
+		}
+	}
+	ul {
+		li {
+			margin-bottom: 0.5rem;
+			font-weight: $font-semi-bold;
+		}
+		li::before {
+			content: '• ';
+			color: red;
+		}
+	}
+}
+
+.why-titles {
+	font-size: $font-xl;
+	justify-self: center;
+	font-style: italic;
+	line-height: 1;
+	margin-bottom: 1rem;
+	@media only screen and (max-width: 800px) {
+		font-size: $font-l;
 	}
 }
 
@@ -107,15 +201,26 @@
 .item-link {
 	color: $font-color-secondary;
 	font-size: $font-xs;
-	padding-bottom: 0.25rem;
+	font-weight: $font-semi-bold;
+	padding: 0.2rem;
 	&:hover {
 		color: $font-color-secondary;
+	}
+}
+
+//Programs Page
+#section-two-programs {
+	background: $color-bkg-two;
+	color: $font-color-secondary;
+	.section-two-item {
+		background-color: $color-form;
 	}
 }
 
 // Section 3
 .section-three {
 	padding: 3rem 0;
+	background: $color-bkg-two;
 }
 .section-three-container {
 	grid-template-columns: 1fr 1fr 1fr;
@@ -205,20 +310,21 @@
 		background: none;
 		padding-bottom: 2rem;
 	}
+	a {
+		margin: auto;
+	}
 	button {
 		background: $color-form;
 		border: 4px solid $color-primary;
-		width: 30%;
-		margin: auto;
 		padding: 1rem 3rem;
 		color: $color-primary;
 		font-size: $font-r;
 		&:hover {
 			color: $font-color-primary;
 			background: $color-primary;
+			cursor: pointer;
 		}
 		@media only screen and (max-width: 800px) {
-			width: 80%;
 			background: none;
 		}
 	}

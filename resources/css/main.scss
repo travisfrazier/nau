@@ -5,6 +5,7 @@
 $color-primary: rgba(0, 51, 102, 1);
 $color-secondary: rgba(102, 153, 204, 1);
 $color-bkg: rgba(0, 51, 102, 0.4);
+$color-bkg-two: rgba(249, 249, 249, 1);
 
 $font-color-primary: #fff;
 $font-color-secondary: rgb(90, 90, 90);
@@ -31,13 +32,14 @@ $main-font: acumin-pro, sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 $other-font: freight-sans-compressed-pro, sans-serif;
 
+//Font sizes
 $font-xl: 2.75rem;
 $font-l: 2rem;
+$font-ml: 1.4rem;
 $font-m: 1.25rem;
 $font-r: 1rem;
 $font-s: 0.85rem;
 $font-xs: 0.75rem;
-$font-submit: 1.75rem;
 
 // Universal Styles and Classes
 html {
@@ -51,9 +53,9 @@ html {
 }
 body {
 	font-family: $main-font;
-	letter-spacing: 1.6px;
 	color: $main-font-color;
 	font-weight: $font-light;
+	line-height: 1.2;
 }
 
 a {
@@ -61,6 +63,7 @@ a {
 	&:hover {
 		text-decoration: none;
 		color: $white-color;
+		cursor: pointer;
 	}
 }
 
@@ -79,7 +82,13 @@ a {
 	font-weight: $font-bold;
 }
 
+.default-images {
+	border-radius: 50px;
+	width: 100%;
+}
+
 // Partial Imports
 @import 'partials/header';
+@import 'partials/form';
 @import 'partials/inner';
 @import 'partials/footer';

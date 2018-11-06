@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -148,9 +149,9 @@ html {
 
 body {
   font-family: acumin-pro, sans-serif;
-  letter-spacing: 1.6px;
   color: #3c3c40;
   font-weight: 300;
+  line-height: 1.2;
 }
 
 a {
@@ -160,6 +161,7 @@ a {
 a:hover {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .grid-container {
@@ -179,6 +181,11 @@ a:hover {
 
 .bold {
   font-weight: 700;
+}
+
+.default-images {
+  border-radius: 50px;
+  width: 100%;
 }
 
 .nav-wrapper {
@@ -328,7 +335,7 @@ a:hover {
 .header-wrapper {
   background: url("../images/background-one.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 25%;
   background-repeat: no-repeat;
   height: 525px;
   color: #fff;
@@ -382,12 +389,26 @@ a:hover {
   }
 }
 
+#header-wrapper-pro {
+  background: url("../images/background-pro.jpg");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+}
+
+#header-wrapper-why {
+  background: url("../images/background-why.jpg");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+}
+
 .contact-form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  padding: 0 4rem;
+  padding: 0 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -405,7 +426,7 @@ a:hover {
 
 .contact-form h3 {
   color: #f1b300;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
   letter-spacing: 2px;
@@ -417,6 +438,7 @@ a:hover {
 .contact-form input {
   border: none;
   padding: 0.25rem;
+  font-size: 0.85rem;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -449,6 +471,17 @@ a:hover {
 
 .contact-form fieldset {
   margin-bottom: -1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form fieldset input {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .contact-form select {
@@ -460,12 +493,15 @@ a:hover {
   color: grey;
   font-size: 0.75rem;
   font-weight: 300;
-  line-height: 0.5;
 }
 
 .contact-form p {
   text-align: center;
   font-size: 0.75rem;
+}
+
+.contact-form #number {
+  width: 100%;
 }
 
 .section-one-container {
@@ -531,7 +567,128 @@ a:hover {
 
 .section-one-container .section-one-text {
   font-size: 1rem;
-  line-height: 1.5;
+}
+
+.section-one-rev {
+  background: none;
+}
+
+.section-one-container-rev {
+  padding: 4rem 0;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  color: #5a5a5a;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-one-container-rev {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section-one-container-rev img {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+.section-one-container-rev .section-one-rev-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-one-container-rev h3 {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.section-one-container-rev ul {
+  margin-top: 1.5rem;
+}
+
+.section-one-container-rev ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.section-one-container-rev ul li::before {
+  content: '• ';
+  color: red;
+}
+
+.section-one-no-rev {
+  background: #f9f9f9;
+}
+
+#section-one-why {
+  background: #f9f9f9;
+}
+
+#section-one-container-why {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: start;
+  grid-gap: 1rem;
+}
+
+#section-one-container-why .section-one-title-container-why {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 1rem;
+}
+
+#section-one-container-why .section-one-title-container-why .section-one-title {
+  font-size: 2.75rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+  #section-one-container-why .section-one-title-container-why .section-one-title {
+    font-size: 2rem;
+  }
+}
+
+#section-one-container-why .section-one-title-container-why .section-one-subtitle {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #section-one-container-why .section-one-title-container-why .section-one-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+#section-one-container-why ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+#section-one-container-why ul li::before {
+  content: '• ';
+  color: red;
+}
+
+.why-titles {
+  font-size: 2.75rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .why-titles {
+    font-size: 2rem;
+  }
 }
 
 .section-two {
@@ -619,15 +776,26 @@ a:hover {
 .item-link {
   color: #5a5a5a;
   font-size: 0.75rem;
-  padding-bottom: 0.25rem;
+  font-weight: 500;
+  padding: 0.2rem;
 }
 
 .item-link:hover {
   color: #5a5a5a;
 }
 
+#section-two-programs {
+  background: #f9f9f9;
+  color: #5a5a5a;
+}
+
+#section-two-programs .section-two-item {
+  background-color: lightgray;
+}
+
 .section-three {
   padding: 3rem 0;
+  background: #f9f9f9;
 }
 
 .section-three-container {
@@ -746,11 +914,13 @@ a:hover {
   }
 }
 
+.section-five a {
+  margin: auto;
+}
+
 .section-five button {
   background: lightgray;
   border: 4px solid #003366;
-  width: 30%;
-  margin: auto;
   padding: 1rem 3rem;
   color: #003366;
   font-size: 1rem;
@@ -759,11 +929,11 @@ a:hover {
 .section-five button:hover {
   color: #fff;
   background: #003366;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
   .section-five button {
-    width: 80%;
     background: none;
   }
 }
