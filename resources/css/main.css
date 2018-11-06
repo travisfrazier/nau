@@ -193,6 +193,8 @@ a:hover {
 }
 
 .nav-wrapper .nav-container {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   color: #fff;
@@ -202,10 +204,12 @@ a:hover {
   .nav-wrapper .nav-container {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    grid-gap: 1rem;
   }
 }
 
@@ -213,9 +217,9 @@ a:hover {
   padding: 0.75rem 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .nav-wrapper .nav-container img {
-    padding-right: 1rem;
+    padding: 0;
   }
 }
 
@@ -237,6 +241,22 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .nav-wrapper .nav-container .nav-links-container {
     display: none;
+    background: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -248,6 +268,12 @@ a:hover {
 @media only screen and (max-width: 800px) {
   .nav-wrapper .nav-container .nav-links-container .phone {
     width: 15%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-wrapper .nav-container .nav-links-container .phone {
+    display: none;
   }
 }
 
@@ -268,6 +294,12 @@ a:hover {
           align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .nav-wrapper .nav-container .nav-links-container .tel {
+    display: none;
+  }
+}
+
 .main-logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -276,6 +308,7 @@ a:hover {
 
 .mobile-phone {
   display: none;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -314,6 +347,12 @@ a:hover {
   margin-bottom: 0.2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .nav ul {
+    display: block;
+  }
+}
+
 .nav ul li {
   padding: 0.6rem 0.75rem;
   margin-left: 1rem;
@@ -325,6 +364,13 @@ a:hover {
     padding: 0.5rem;
     margin-left: 0.5rem;
     font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav ul li {
+    color: #003366;
+    font-weight: 500;
   }
 }
 
