@@ -4,8 +4,8 @@
 		grid-template-columns: 1fr 1fr;
 		color: $font-color-primary;
 		@media only screen and (max-width: 600px) {
-			display: flex;
-			justify-content: center;
+			grid-template-columns: 1fr 1fr 1fr;
+			justify-items: center;
 			align-items: center;
 		}
 		img {
@@ -43,12 +43,15 @@
 	}
 }
 
+.main-logo {
+	align-self: center;
+}
+
 //Mobile nav styles
 .mobile-phone {
 	display: none;
 	@media only screen and (max-width: 600px) {
 		display: block;
-		width: 15%;
 	}
 }
 

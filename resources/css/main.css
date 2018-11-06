@@ -193,12 +193,9 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
   .nav-wrapper .nav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -264,6 +261,12 @@ a:hover {
           align-items: center;
 }
 
+.main-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .mobile-phone {
   display: none;
 }
@@ -271,7 +274,6 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .mobile-phone {
     display: block;
-    width: 15%;
   }
 }
 
