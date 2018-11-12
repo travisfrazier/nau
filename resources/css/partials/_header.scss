@@ -103,6 +103,7 @@
 .flex {
 	display: flex;
 }
+//Mobile nav end
 
 .nav {
 	display: flex;
@@ -115,7 +116,6 @@
 		li {
 			padding: 0.6rem 0.75rem;
 			margin-left: 1rem;
-			font-weight: $font-semi-bold;
 			@media only screen and (max-width: 800px) {
 				padding: 0.5rem;
 				margin-left: 0.5rem;
