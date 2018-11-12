@@ -174,7 +174,7 @@ a:hover {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  max-width: 980px;
+  max-width: 1080px;
   padding-right: 10px !important;
   padding-left: 10px !important;
   margin: 0 auto;
@@ -319,6 +319,7 @@ a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 7rem;
 }
 
 .mobile-phone {
@@ -419,8 +420,8 @@ a:hover {
 }
 
 .header-wrapper div {
-  -ms-grid-columns: auto 40%;
-      grid-template-columns: auto 40%;
+  -ms-grid-columns: 1fr 35%;
+      grid-template-columns: 1fr 35%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
