@@ -328,4 +328,16 @@
 			background: none;
 		}
 	}
+	.section-five-container {
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		p {
+			font-size: $font-l;
+			margin-bottom: 1rem;
+			@media only screen and (max-width: 700px) {
+				font-size: $font-m;
+			}
+		}
+	}
 }
