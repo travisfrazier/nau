@@ -145,9 +145,12 @@
 		height: auto;
 	}
 	div {
-		grid-template-columns: 1fr 35%;
+		grid-template-columns: 1fr 37%;
 		justify-content: space-between;
 		align-items: end;
+		@media only screen and (max-width: 875px) {
+			grid-template-columns: 1fr 42%;
+		}
 		@media only screen and (max-width: 800px) {
 			grid-template-columns: 1fr;
 		}
@@ -159,7 +162,7 @@
 			@media only screen and (max-width: 800px) {
 				text-align: center;
 				font-size: $font-l;
-				padding: 2rem;
+				padding: 2rem 1rem;
 			}
 		}
 		.header-text-container {
