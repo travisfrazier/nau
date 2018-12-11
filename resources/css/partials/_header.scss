@@ -145,7 +145,7 @@
 		height: auto;
 	}
 	div {
-		grid-template-columns: 1fr 37%;
+		grid-template-columns: 1fr 35%;
 		justify-content: space-between;
 		align-items: end;
 		@media only screen and (max-width: 875px) {
@@ -155,10 +155,11 @@
 			grid-template-columns: 1fr;
 		}
 		.header-text {
-			font-size: $font-xl;
+			font-size: $font-xxl;
 			background: $color-bkg;
-			padding: 1rem 1rem 1rem 0rem;
+			padding: 1rem 1rem 1rem 1rem;
 			font-weight: $font-semi-bold;
+			line-height: 1.2;
 			@media only screen and (max-width: 800px) {
 				text-align: center;
 				font-size: $font-l;

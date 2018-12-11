@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	//grid-template-columns: 1fr;
-	padding: 1.25rem 2rem;
+	padding: 0rem 2rem;
 	justify-content: center;
 	//grid-gap: 1rem;
 	background-color: $color-form;
@@ -31,8 +31,7 @@
 		font-weight: 300;
 	}
 	button {
-		padding-top: 0.25rem;
-		padding-bottom: 0.25rem;
+		padding: 0.75rem 0;
 		border: none;
 		background-color: $color-primary;
 		font-size: $font-m;
@@ -41,10 +40,17 @@
 		margin-bottom: 1rem;
 	}
 	fieldset {
-		display: flex;
-		justify-content: center;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		margin-bottom: 1rem;
+		position: relative;
+		line-height: 1.1;
 		input {
-			align-self: flex-start;
+			//align-self: flex-start;
+			//position: relative;
+			position: absolute;
+			top: 0.15rem;
+			left: 0rem;
 		}
 	}
 	select {
@@ -57,13 +63,16 @@
 	}
 	.form__disclaimer {
 		color: $grey-color;
-		font-size: $font-xs;
+		font-size: $font-s;
 		font-weight: $font-light;
 		margin-bottom: 1rem;
+		display: inline;
+		width: 4rem;
 	}
 	p {
 		text-align: center;
-		font-size: $font-xs;
+		font-size: $font-s;
+		color: $grey-color;
 	}
 	#number {
 		width: 100%;

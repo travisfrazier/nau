@@ -150,8 +150,8 @@ html {
 body {
   font-family: acumin-pro, sans-serif;
   color: #3c3c40;
-  font-weight: 300;
-  line-height: 1.2;
+  font-weight: 400;
+  line-height: 1.5;
   padding-top: 104px;
 }
 
@@ -420,8 +420,8 @@ a:hover {
 }
 
 .header-wrapper div {
-  -ms-grid-columns: 1fr 37%;
-      grid-template-columns: 1fr 37%;
+  -ms-grid-columns: 1fr 35%;
+      grid-template-columns: 1fr 35%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -447,8 +447,9 @@ a:hover {
 .header-wrapper div .header-text {
   font-size: 2.75rem;
   background: rgba(0, 51, 102, 0.4);
-  padding: 1rem 1rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 @media only screen and (max-width: 800px) {
@@ -545,7 +546,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.25rem 2rem;
+  padding: 0rem 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -597,8 +598,7 @@ a:hover {
 }
 
 .contact-form button {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding: 0.75rem 0;
   border: none;
   background-color: #003366;
   font-size: 1.25rem;
@@ -608,17 +608,17 @@ a:hover {
 }
 
 .contact-form fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.1;
 }
 
 .contact-form fieldset input {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  position: absolute;
+  top: 0.15rem;
+  left: 0rem;
 }
 
 .contact-form select {
@@ -632,14 +632,17 @@ a:hover {
 
 .contact-form .form__disclaimer {
   color: grey;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 300;
   margin-bottom: 1rem;
+  display: inline;
+  width: 4rem;
 }
 
 .contact-form p {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  color: grey;
 }
 
 .contact-form #number {
@@ -709,6 +712,7 @@ a:hover {
 
 .section-one-container .section-one-text {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .section-one-rev {
@@ -745,7 +749,7 @@ a:hover {
 
 .section-one-container-rev h3 {
   margin: 1.5rem 0;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
 }
 
@@ -769,6 +773,10 @@ a:hover {
 
 #section-one-why {
   background: #f9f9f9;
+}
+
+#section-one-why strong {
+  font-weight: 700;
 }
 
 #section-one-container-why {
@@ -819,12 +827,13 @@ a:hover {
 }
 
 .why-titles {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   -ms-grid-column-align: center;
       justify-self: center;
   font-style: italic;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1045,8 +1054,6 @@ a:hover {
 
 .section-five {
   background: lightgray;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -1123,7 +1130,7 @@ a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 70%;
+  width: 60%;
 }
 
 @media only screen and (max-width: 800px) {
