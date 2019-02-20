@@ -1,0 +1,9 @@
+name: Northern Arizona University
+
+_editable_regions:
+  image:
+    url_src: true
+
+_options:
+  image: # Front matter field
+    uploads_dir: 'resources/images/:title'
